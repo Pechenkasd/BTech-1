@@ -6,7 +6,7 @@ import { getCredit } from "../../redux/slice/creditSlice";
 const ShippingCard = ({ props }) => {
     const dispatch = useDispatch();
     const credit = useSelector(state => state.credit.credit);
-
+    
     const activeBorder = () => {
         dispatch(getCredit(props.title));
     };
