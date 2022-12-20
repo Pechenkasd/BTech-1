@@ -1,4 +1,5 @@
 .mapBindingBlock {
+    max-width: 100%;
     margin: 130px 0 60px 0;
 }
 .mapBinding {
@@ -201,4 +202,28 @@
     top: -5px;
     right: 15px;
     cursor: pointer;
+}
+@media (max-width:1024px){
+    .bindingH2{
+        max-width: 970px;
+        display: flex;
+    }
+    .mapBinding{
+        max-width: 100%;
+        object-fit: cover;
+        object-position: cover;
+    }
+    .mapCard{
+        max-width: 480px;
+        object-fit: cover;
+    }
+    .mapCard2{
+        max-width: 480px;
+        object-fit: cover;
+    }
+}
+@media  (max-width:480px) {
+    .mapCard.mapCard2{
+        max-width: none;
+    }
 }
